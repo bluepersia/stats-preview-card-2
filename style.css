@@ -134,6 +134,9 @@ html {
         align-items: stretch;
         text-align: left;
     }
+    .cmp__content {
+        padding: 4.6em;
+    }
     .cmp__img-container {
         height: auto;
     }
