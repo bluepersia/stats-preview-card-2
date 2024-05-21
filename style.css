@@ -17,6 +17,7 @@ body {
     align-items: center;
     justify-content: center;
     background-color: var(--cmp-c-mainBG);
+    padding: 0 6.4%;
 }
 
 * {
@@ -62,6 +63,7 @@ html {
     font-size: .8rem;
     text-transform: uppercase;
     letter-spacing: .083em;
+    font-weight: 400;
 }
 
 .cmp__title .accent 
@@ -82,3 +84,68 @@ html {
 
 
 
+
+/* Layout */
+
+.cmp 
+{
+    background-color: var(--cmp-c-cardBG);
+    display: flex;
+    flex-direction: column-reverse;
+    border-radius: 8px;
+    max-width: 1110px;
+    text-align: center;
+}
+
+.cmp__img-container {
+    background-image: url(./images/image-header-mobile.jpg);
+    background-size: cover;
+    background-color: var(--cmp-c-Accent);
+    background-blend-mode: multiply;
+    height: 240px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.cmp__content {
+    padding: 2.6em 2.13em;
+}
+
+
+.cmp__stats {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6em;
+    margin-top: 2.6em;
+}
+
+.cmp__stat-val {
+    margin-bottom: 0;
+}
+
+.cmp__stat-key {
+    margin-top: 0;
+}
+
+@media (min-width:768px)
+{
+    .cmp {
+        flex-direction: row;
+        align-items: stretch;
+        text-align: left;
+    }
+    .cmp__img-container {
+        height: auto;
+    }
+
+    .cmp__img-container, .cmp__content {
+        width: 50%;
+    }
+
+    .cmp__stats 
+    {
+        flex-direction: row;
+        align-items: center;
+        margin-top: 4.8em;
+    }
+}
