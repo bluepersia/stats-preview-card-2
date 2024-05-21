@@ -30,3 +30,55 @@ body {
 * :last-child {
     margin-bottom: 0;
 }
+
+
+/* Typography */
+
+html {
+    font-size: 15px;
+}
+
+.cmp 
+{
+    font-family:  "Inter", sans-serif;
+    line-height: 1.6;
+    color: var(--cmp-c-MainTxt);
+}
+
+.cmp h1 
+{
+    line-height: 1.14;
+    font-size: 1.86rem;
+    color: var(--cmp-c-Headings);
+}
+.cmp h3
+{
+    color: var(--cmp-c-Headings);
+    font-size: 1.6rem;
+}
+
+.cmp h4 {
+    color: var(--cmp-c-StatHeadings);
+    font-size: .8rem;
+    text-transform: uppercase;
+    letter-spacing: .083em;
+}
+
+.cmp__title .accent 
+{
+    color: var(--cmp-c-Accent);
+}
+
+
+@media (min-width: 768px)
+{
+    .cmp h1 
+    {
+        font-size: 2.4rem;
+        line-height: 1.22;
+    }
+
+}
+
+
+
